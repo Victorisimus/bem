@@ -76,7 +76,6 @@ h1, h2, h3, h4, h5, h6 {
 /*--------------------*/
 body {
   font-family: Lato;
-  padding: 2px;
 }
 
 .about__body {
@@ -170,4 +169,53 @@ body {
   line-height: 26px;
   font-weight: 300;
   font-size: 14px;
+}
+
+footer {
+  background-color: #3c3c3c;
+}
+
+.footer {
+  width: 400px;
+  margin: 0 auto;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.footer__logo {
+  width: 122px;
+  margin: 0 auto;
+}
+
+.footer__links {
+  width: 260px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 40px;
+}
+
+.links__item {
+  font-size: 14px;
+  line-height: 1.2;
+  font-weight: 400;
+  color: #a4a4a4;
+}
+
+.footer__copyright {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 30px;
+  font-size: 14px;
+  line-height: 1.2;
+  font-weight: 400;
+  color: #6c6c6c;
 }
