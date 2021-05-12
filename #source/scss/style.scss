@@ -2,6 +2,9 @@
 @import "_nullstyle.scss";
 @import url(https://fonts.googleapis.com/css?family=Lato:400,300,700,900);
 
+$white: #fff;
+$black: #000;
+
 body {
   font-family: Lato;
 }
@@ -47,12 +50,12 @@ body {
   &:after {
     content: "";
     position: absolute;
-    width: 50px;
+    width: 80px;
     bottom: 0;
     height: 1px;
     left: 50%;
-    background-color: #000;
-    margin: 0px 0px 0px -25px;
+    background-color: $black;
+    margin: 0px 0px 0px -40px;
   }
 }
 .item-about {
@@ -115,15 +118,80 @@ body {
   font-weight: 400;
   color: #a4a4a4;
 }
+.btn {
+  display: block;
+  width: 182px;
+  height: 47px;
+  color: $black;
+  border: 1px solid $black;
+  margin: 0 auto;
+  cursor: pointer;
+  padding: 16px 40px;
+  text-align: center;
+  font-size: 16px;
+  line-height: 1.2;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+}
 .header {
-  background: url(/img/header/bg_header.png),
-    linear-gradient(to right, #575583, #4f8b9f);
+  background: url(/img/header/bg_header.png);
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   height: 1080px;
   padding-top: 160px;
+  color: $white;
+  &__body {
+    max-width: 823px;
+    margin: 0px auto;
+  }
   &__logo {
     width: 195px;
     margin: 0 auto;
+  }
+  &__title {
+    padding-top: 159px;
+    font-size: 34px;
+    line-height: 40px;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 0.16em;
+    text-align: center;
+  }
+  &__subtiile {
+    padding-top: 20px;
+    position: relative;
+    font-size: 26px;
+    font-weight: 400;
+    text-transform: none;
+    text-align: center;
+    &:after {
+      content: "";
+      position: absolute;
+      width: 105px;
+      bottom: -49px;
+      height: 1px;
+      left: 50%;
+      background-color: $white;
+      margin: 0px 0px 0px -52.5px;
+    }
+  }
+
+  &__btn {
+    border-color: $white;
+    color: $white;
+    margin-top: 278px;
+    position: relative;
+    &:after {
+      content: "";
+      position: absolute;
+      background-image: url(/img/header/arrow_down.png);
+      background-repeat: no-repeat;
+      width: 17px;
+      bottom: -75px;
+      height: 10px;
+      left: 50%;
+      margin: 0px 0px 0px -8.5px;
+    }
   }
 }
